@@ -15,8 +15,8 @@ public class GenericTest {
         List<? extends B> list = new ArrayList<>();
         A a = new A();
         B b = new B();
-        list.add(a);//编译错误
-        list.add(b);//编译错误
+//        list.add(a);//编译错误
+//        list.add(b);//编译错误
         list.add(null); //正确
     }
 
@@ -25,7 +25,7 @@ public class GenericTest {
         List<? super B> list = new ArrayList<>();
         A a = new A();
         B b = new B();
-        list.add(new Object());//编译错误
+//        list.add(new Object());//编译错误
         list.add(b);//正确
         list.add(a);//正确
     }
