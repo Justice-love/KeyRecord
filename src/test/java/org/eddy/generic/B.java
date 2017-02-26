@@ -1,7 +1,8 @@
 package org.eddy.generic;
 
 /**
- * Created by eddy on 2017/2/26.
+ * 父类
+ * Created by 轶 on 2017/2/26.
  */
 public class B {
 }
