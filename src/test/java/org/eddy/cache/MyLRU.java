@@ -8,6 +8,10 @@ import java.util.Map;
  */
 public class MyLRU extends LinkedHashMap{
 
+    public MyLRU(int initialCapacity, float loadFactor) {
+        super(initialCapacity, loadFactor, true);
+    }
+
     /**
      * Returns <tt>true</tt> if this map should remove its eldest entry.
      * This method is invoked by <tt>put</tt> and <tt>putAll</tt> after
