@@ -16,7 +16,7 @@ public class OracleCache<K, V> {
         }
         V v = new Real<V>().create();
         putToCache(key, v);
-        return null;
+        return v;
     }
 
     private void putToCache(K key, V v) {
